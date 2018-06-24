@@ -1,0 +1,7 @@
+Django==2.0.6
+django-bootstrap3==10.0.1
+django-bootstrap4==0.0.6
+django-haystack==2.8.1
+jieba==0.39
+pytz==2018.4
+Whoosh==2.7.4
