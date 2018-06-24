@@ -1,0 +1,69 @@
+{% extends 'inventory_manage/base.html' %}
+{% block header %}
+
+    <br/>
+<div class="container">
+    <div class="card">
+        <div class="card-body ">
+            <div style="width:500px;height:20px;float:left;">
+                <h1>{{ E_O }}</h1></div>
+
+            <div style="width:150px;height:20px;float:right;">
+
+                <a class="btn btn-lg btn-primary" href="{% url 'work_flow:new_step' E_O.id %}" role="button">添加工步</a>
+            </div>
+            <br/><br/>
+        </div>
+    </div>
+</div>
+
+{% endblock header %}
+
+{% block content %}
+
+    <br/>
+
+    <div class="container">
+    <div class="row tool-list">
+        {% for wksp in work_steps %}
+        <div class="col-md-6 col-lg-4 col-xl-4 px-lg-2 mb-3 ">
+            <div class="card ">
+                <div class="card-header">
+
+                    <div style="width:200px;height:20px;float:left;">
+                            <h4>{{ wksp.name|linebreaks }}</h4></div>
+                    <div style="width:50px;height:20px;float:right;">
+                    <a class="btn btn-info" role="button" href="{% url 'work_flow:edit_step' wksp.id %}" >编辑</a>
+                    </div>
+                    <br/><br/>
+                </div>
+                <div class="card-body m-auto">
+                    <h3>
+                        <div style="width:150px;height:20px;float:left;">
+                            计件价格：</div>
+                        <div style="width:100px;height:20px;float:right;">
+                            {{ wksp.price|linebreaks }}</div>
+                        <br/>
+                        <div style="width:150px;height:20px;float:left;">
+                            是否完成：</div>
+                        <div style="width:100px;height:20px;float:right;">
+                            {{ wksp.flag|linebreaks }}</div>
+                        <br/>
+
+                    </h3>
+                </div>
+                <div class="card-footer">
+                    日期：{{ wksp.date_add|date:'Y-m-d H:i:s' }}
+                </div>
+            </div>
+        </div>
+        {% empty %}
+            <div class="alert alert-danger">
+                <strong>请添加工步！</strong>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,91 @@
+{% extends "inventory_manage/base.html" %}
+
+{% block header %}
+
+    <br/>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+
+                <div style="width:300px;height:20px;float:left;">
+                <h2>正在生产概览：</h2></div>
+                <div style="width:150px;height:20px;float:right;">
+                <a class="btn btn-lg btn-primary" href="{% url 'work_flow:new_element' %}" role="button">添加生产任务</a>
+                </div>
+            <br/><br/>
+        </div>
+    </div>
+</div>
+
+{% endblock header %}
+
+{% block content %}
+
+    <br/>
+
+    <div class="container">
+    <div class="row tool-list">
+        {% for element in elements %}
+        <div class="col-md-6 col-lg-4 col-xl-4 px-lg-2 mb-3 ">
+            <div class="card ">
+                <div class="card-header">
+
+                    <div style="width:220px;height:20px;float:left;">
+                            <h4>{{ element.name|linebreaks }}</h4></div>
+                    <div style="width:50px;height:20px;float:right;">
+                    <a class="btn btn-info" role="button" href="{% url 'work_flow:edit_working' element.id %}" >编辑</a>
+                    </div>
+                    <br/><br/>
+                </div>
+                <div class="card-body ">
+                    <h3>
+                        <div style="width:100px;height:20px;float:left;">
+                            数量：</div>
+                        <div style="width:100px;height:20px;float:left;">
+                            {{ element.number|linebreaks }}</div>
+                        <br/>
+                        <div style="width:100px;height:20px;float:left;">
+                            材质：</div>
+                        <div style="width:100px;height:20px;float:left;">
+                            {{ element.material|linebreaks }}</div>
+                        <br/>
+                        <div style="width:150px;height:20px;float:left;">
+                            正在进行：</div>
+                        <div style="width:100px;height:20px;float:left;">
+                            {{ name|linebreaks }}</div>
+                        <br/>
+                        <script>
+                            if ({{ element.flag}}=true){
+                                document.getElementById("bool").innerHTML = "是"
+                            }else {
+                                document.getElementById("bool").innerHTML = "否"
+                            }
+                        </script>
+                        <div style="width:150px;height:20px;float:left;">
+                            是否完成：</div>
+                        <div style="width:100px;height:20px;float:left;">
+                            {{ element.flag|linebreaks }}
+                        </div>
+                        <br/>
+                    </h3>
+                </div>
+                <div class="card-footer"><br/>
+                    <div style="width:250px;height:20px;float:left;">
+                            <h5>日期：{{ element.date_add|date:'Y-m-d H:i:s' }}</h5></div>
+                        <div style="width:50px;height:20px;float:right;">
+                    <a class="btn btn-info" role="button" href="{% url 'work_flow:detials' element.id %}" >详情</a>
+                   </div><br/><br/>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+            <div class="alert alert-danger">
+                <strong>请添加生产计划</strong>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock content %}

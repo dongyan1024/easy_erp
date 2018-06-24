@@ -1,0 +1,70 @@
+{% extends 'inventory_manage/base.html' %}
+{% load highlight %}
+{% block content %}
+
+{% if query %}
+    <br/>
+    <div class="container">
+        <div class="card">
+            <div class="card-body ">
+                <h1>搜索结果如下：</h1>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+<div class="container">
+    <div class="row tool-list">
+    {% for result in page.object_list %}
+         <div class="col-md-6 col-lg-4 col-xl-4 px-lg-2 mb-3 ">
+            <div class="card ">
+                <div class="card-header">
+                    <div style="width:200px;height:20px;float:left;">
+                        <h2><a href=" /element/{{ result.object.type.id }}/">{{ result.object.name }}</a></h2>
+                    </div>
+                    <div style="width:50px;height:20px;float:right;">
+                        <a class="btn btn-info" role="button" href="/edit_element/{{ result.object.id }}" >编辑</a>
+                    </div><br/><br/>
+                </div>
+                <div class="card-body">
+                    <h3>
+                        <div style="width:100px;height:20px;float:left;">
+                            数量：</div>
+                        <div style="width:100px;height:20px;float:left;">
+                            {{ result.object.number }}</div>
+                        <br/>
+                        <div style="width:100px;height:20px;float:left;">
+                            材质：</div>
+                        <div style="width:100px;height:20px;float:left;">
+                            {{ result.object.material}}</div>
+                        <br/>
+                        <div style="width:100px;height:20px;float:left;">
+                            类别：</div>
+                        <div style="width:100px;height:20px;float:left;">
+                            {{ result.object.type }}</div>
+                        <br/>
+                    </h3>
+                </div>
+            </div>
+         </div>
+            {% empty %}
+                <div class="alert alert-danger">
+                <strong>没有此类库存！</strong>
+                </div>
+            {% endfor %}
+    </div>
+</div>
+
+
+
+
+
+    {% if page.has_previous or page.has_next %}
+        <div>
+            {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; 上一页{% if page.has_previous %}</a>{% endif %}
+        |
+            {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}下一页 &raquo;{% if page.has_next %}</a>{% endif %}
+        </div>
+    {% endif %}
+{% endif %}
+{% endblock %}

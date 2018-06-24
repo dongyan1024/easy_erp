@@ -1,0 +1,18 @@
+{% extends "inventory_manage/base.html" %}
+{% load bootstrap4 %}
+{% block header %}
+    <h2>添加工步</h2>
+{% endblock header %}
+
+{% block content %}
+ <h3><a href="{% url 'work_flow:detials' element.id %}">返回</a></h3>
+
+ <form action="{% url 'work_flow:new_step' element.id %}" method='post' class="form">
+{% csrf_token %}
+ {% bootstrap_form form %}
+
+{% buttons %}
+<button name='submit' class="btn-primary">添加</button>
+{% endbuttons %}
+</form>
+{% endblock content %}

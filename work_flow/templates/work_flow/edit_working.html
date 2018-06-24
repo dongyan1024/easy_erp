@@ -1,0 +1,36 @@
+{% extends "inventory_manage/base.html" %}
+{% load bootstrap4 %}
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+
+<br/>
+    <div class="container">
+
+  <div class="card">
+    <div class="card-header">
+        <div style="width:200px;height:20px;float:left;">
+               <h2>编辑生产任务</h2> </div>
+        <div style="width:500px;height:20px;float:left;">
+                <h2><a href="{% url 'work_flow:overview'  %}">{{ element }}</a></h2>
+        </div><br/><br/>
+    </div>
+
+    <div class="card-body">
+       <form action="{% url 'work_flow:edit_working' element.id %}" method='post' class="form">
+{% csrf_token %}
+{% bootstrap_form form %}
+{% buttons %}
+    <button name="submit" class="btn btn-primary">提交更改</button>
+{% endbuttons %}
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+{% endblock content %}

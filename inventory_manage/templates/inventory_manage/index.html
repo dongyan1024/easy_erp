@@ -1,0 +1,18 @@
+{% extends "inventory_manage/base.html" %}
+{% block header %}
+    <div class='jumbotron'>
+        <h3>工具加工车间生产流程管理系统简介</h3>
+        <h4>此系统是为了满足ISO9001及API Q1质量体系的要求而开发的。
+            达到了车间对生产流程和库存零件进行实时管理的需求。通过此系统，车间调度可以随时创建新的生产计划，
+            生产流程的每一步都能实时反馈，当检验员检验合格后点击合格按钮即可进行下一流程。
+            <br>库存管理可以快捷灵活的添加并查看所有库存零件及刀具、工具、量具等。</h4>
+        <h5>
+        <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}" role="button">点击这里创建用户</a>
+
+        </h5>
+    </div>
+{% endblock header %}
+{% block content %}
+
+
+{% endblock content %}
