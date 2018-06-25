@@ -5,11 +5,8 @@
 <div class="container">
     <div class="card">
         <div class="card-body ">
-            <div style="width:500px;height:20px;float:left;">
-                <h1>{{ E_O }}</h1></div>
-
-            <div style="width:150px;height:20px;float:right;">
-
+            <div class="row">
+                <h2>{{ E_O }}</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="btn btn-lg btn-primary" href="{% url 'work_flow:new_step' E_O.id %}" role="button">添加工步</a>
             </div>
             <br/><br/>

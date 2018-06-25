@@ -8,12 +8,11 @@
     <div class="card">
         <div class="card-body">
 
-                <div style="width:300px;height:20px;float:left;">
-                <h2>正在生产概览：</h2></div>
-                <div style="width:150px;height:20px;float:right;">
+                <div class="row">
+                <h2>正在生产概览：</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="btn btn-lg btn-primary" href="{% url 'work_flow:new_element' %}" role="button">添加生产任务</a>
                 </div>
-            <br/><br/>
+
         </div>
     </div>
 </div>
@@ -30,7 +29,6 @@
         <div class="col-md-6 col-lg-4 col-xl-4 px-lg-2 mb-3 ">
             <div class="card ">
                 <div class="card-header">
-
                     <div style="width:220px;height:20px;float:left;">
                             <h4>{{ element.name|linebreaks }}</h4></div>
                     <div style="width:50px;height:20px;float:right;">

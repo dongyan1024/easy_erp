@@ -4,14 +4,10 @@
 <div class="container">
     <div class="card">
         <div class="card-body ">
-            <div style="width:500px;height:20px;float:left;">
-                <h1>{{ type }}</h1></div>
-
-            <div style="width:150px;height:20px;float:right;">
-
+            <div class="row">
+                <h2>{{ type }}</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="btn btn-lg btn-primary" href="{% url 'inventory_manage:new_element' type.id %}" role="button">添加新零件</a>
             </div>
-            <br/><br/>
         </div>
     </div>
 </div>
@@ -26,13 +22,14 @@
         <div class="col-md-6 col-lg-4 col-xl-3 px-lg-2 mb-3 ">
             <div class="card ">
                 <div class="card-header">
-                    <br/>
-                    <div style="width:100px;height:20px;float:left;">
-                            <h4>{{ element.name|linebreaks }}</h4></div>
+
+                    <div style="width:150px;height:20px;float:left;">
+                            <h4>{{ element.name|linebreaks }}</h4>
+                        </div>
                     <div style="width:50px;height:20px;float:right;">
                     <a class="btn btn-info" role="button" href="{% url 'inventory_manage:edit_element' element.id %}" >编辑</a>
-                    </div>
-                    <br/><br/>
+                    </div><br/><br/>
+
                 </div>
                 <div class="card-body m-auto">
                     <h3>
