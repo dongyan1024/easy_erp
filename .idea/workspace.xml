@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee2e2490-46ac-4891-b54d-b4698d7ef1bf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/erp1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory_manage/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_manage/templates/search/search.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +19,7 @@
       <file leaf-file-name="element.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="1050">
               <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="45" />
             </state>
           </provider>
@@ -67,19 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inventory_manage/templates/search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
+            <state relative-caret-position="203">
               <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
               <folding>
+                <element signature="e#1184#1227#0#HTML" expanded="true" />
                 <element signature="e#1349#1392#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/erp1/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="109">
@@ -170,9 +170,9 @@
         <option value="$PROJECT_DIR$/work_flow/templates/work_flow/detials.html" />
         <option value="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/type.html" />
         <option value="$PROJECT_DIR$/work_flow/templates/work_flow/overview.html" />
-        <option value="$PROJECT_DIR$/inventory_manage/templates/search/search.html" />
         <option value="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html" />
         <option value="$PROJECT_DIR$/erp1/settings.py" />
+        <option value="$PROJECT_DIR$/inventory_manage/templates/search/search.html" />
       </list>
     </option>
   </component>
@@ -197,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,7 +257,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,13 +336,13 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3297491" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32258064" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.28264758" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21422797" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2174616" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964157" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -681,16 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inventory_manage/templates/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-          <folding>
-            <element signature="e#1349#1392#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/work_flow/templates/work_flow/overview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -707,7 +697,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="1050">
           <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="45" />
         </state>
       </provider>
@@ -716,6 +706,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="122" column="14" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory_manage/templates/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+          <folding>
+            <element signature="e#1184#1227#0#HTML" expanded="true" />
+            <element signature="e#1349#1392#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
