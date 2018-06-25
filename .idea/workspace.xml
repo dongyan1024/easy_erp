@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee2e2490-46ac-4891-b54d-b4698d7ef1bf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/erp1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp1/whoosh_index/_MAIN_2.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/type.html" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/type.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work_flow/templates/work_flow/detials.html" beforeDir="false" afterPath="$PROJECT_DIR$/work_flow/templates/work_flow/detials.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_flow/templates/work_flow/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/work_flow/templates/work_flow/overview.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,19 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="element.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="element.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="25">
               <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-              <folding>
-                <element signature="e#217#223#0#HTML" expanded="true" />
-                <element signature="e#223#229#0#HTML" expanded="true" />
-                <element signature="e#229#235#0#HTML" expanded="true" />
-                <element signature="e#235#241#0#HTML" expanded="true" />
-                <element signature="e#241#247#0#HTML" expanded="true" />
-                <element signature="e#913#956#0#HTML" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -55,20 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="overview.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_flow/templates/work_flow/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="30" />
-              <folding>
-                <element signature="e#221#227#0#HTML" expanded="true" />
-                <element signature="e#227#233#0#HTML" expanded="true" />
-                <element signature="e#233#239#0#HTML" expanded="true" />
-                <element signature="e#239#245#0#HTML" expanded="true" />
-                <element signature="e#245#251#0#HTML" expanded="true" />
-                <element signature="e#839#882#0#HTML" expanded="true" />
-                <element signature="e#982#1025#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -154,10 +131,10 @@
         <option value="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/base.html" />
         <option value="$PROJECT_DIR$/inventory_manage/templates/search/search.html" />
         <option value="$PROJECT_DIR$/erp1/settings.py" />
-        <option value="$PROJECT_DIR$/work_flow/templates/work_flow/overview.html" />
         <option value="$PROJECT_DIR$/work_flow/templates/work_flow/detials.html" />
         <option value="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/type.html" />
         <option value="$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html" />
+        <option value="$PROJECT_DIR$/work_flow/templates/work_flow/overview.html" />
       </list>
     </option>
   </component>
@@ -182,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,6 +218,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,7 +298,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3297491" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32258064" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.28264758" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20452708" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2077607" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -680,34 +657,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work_flow/templates/work_flow/overview.html">
+    <entry file="file://$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="30" />
-          <folding>
-            <element signature="e#221#227#0#HTML" expanded="true" />
-            <element signature="e#227#233#0#HTML" expanded="true" />
-            <element signature="e#233#239#0#HTML" expanded="true" />
-            <element signature="e#239#245#0#HTML" expanded="true" />
-            <element signature="e#245#251#0#HTML" expanded="true" />
-            <element signature="e#839#882#0#HTML" expanded="true" />
-            <element signature="e#982#1025#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="25">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inventory_manage/templates/inventory_manage/element.html">
+    <entry file="file://$PROJECT_DIR$/work_flow/templates/work_flow/overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="e#217#223#0#HTML" expanded="true" />
-            <element signature="e#223#229#0#HTML" expanded="true" />
-            <element signature="e#229#235#0#HTML" expanded="true" />
-            <element signature="e#235#241#0#HTML" expanded="true" />
-            <element signature="e#241#247#0#HTML" expanded="true" />
-            <element signature="e#913#956#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
